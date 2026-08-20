@@ -10,6 +10,10 @@ body {
     color: #333;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 header {
     background-color: #1565c0;
@@ -135,28 +139,41 @@ aside ul li::before {
 
     nav ul {
         flex-wrap: wrap;
-        gap: 15px 25px;
+        justify-content: center;
+        gap: 10px 15px;
         padding: 15px 10px;
+        min-width: 0;
+    }
+
+    nav ul li {
+        min-width: 0;
     }
 
     main {
         flex: none;
         width: 100%;
+        min-width: 0;
         padding: 20px;
     }
 
     aside {
         flex: none;
         width: auto;
+        min-width: 0;
         margin: 0 20px 20px;
     }
 
+    header {
+        min-width: 0;
+    }
+
     header h1 {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
+        word-wrap: break-word;
     }
 
     header p {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
 }
 
