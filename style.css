@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+
+header {
+    background-color: #1565c0;
+    color: white;
+    text-align: center;
+    padding: 40px 20px 20px;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+
+nav {
+    background-color: #e6e619;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 15px 0;
+}
+
+nav ul li {
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    text-decoration: underline;
+}
+
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header, nav {
+    width: 100%;
+}
+
+main {
+    flex: 3;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+aside {
+    flex: 1;
+    background-color: #e05d38;
+    color: white;
+    margin: 30px 30px 30px 0;
+    padding: 25px;
+    border-radius: 6px;
+    height: fit-content;
+}
+
+
+section {
+    background-color: white;
+    border: 1px solid #1565c0;
+    border-radius: 6px;
+    padding: 20px 25px;
+}
+
+section h2 {
+    color: #1565c0;
+    margin-bottom: 15px;
+}
+
+section p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+section code {
+    background-color: #f4f4f4;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+#identificadores p strong,
+#identificadores p:last-of-type {
+    color: #b71c1c;
+}
+
+
+aside h2 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside ul li {
+    padding: 6px 0;
+    font-size: 0.95rem;
+}
+
+aside ul li::before {
+    content: "✓ ";
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 15px 25px;
+        padding: 15px 10px;
+    }
+
+    main {
+        flex: none;
+        width: 100%;
+        padding: 20px;
+    }
+
+    aside {
+        flex: none;
+        width: auto;
+        margin: 0 20px 20px;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        justify-content: flex-start;
+        gap: 12px 20px;
+    }
+
+    section {
+        padding: 15px;
+    }
+}
